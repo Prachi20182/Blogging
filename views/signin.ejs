@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blogging</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+       <link rel="stylesheet" href="css/account.css">
+    </head>
+    <body>
+        <a href="/" class="home">Home</a>
+        <form action="/signup" method="POST">
+        <section class="sign-in">
+        <div class="container">
+        <div class="signin-content">
+            <div class="signin-image">
+                <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                <a href="/signup" class="signin-link">Create an account</a>
+            </div>
+
+            <div class="signin-form">
+                <h2 class="form-title">Sign in</h2>
+                    <div class="form-group">
+                        <label for="your_name"></label>
+                        <input type="text" name="your_email" id="your_name" placeholder="Your Email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="your_pass"></label>
+                        <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                    </div>
+                    <div class="form-group form-button">
+                        <button type="submit" name="signin" id="signin" class="btn">Log in</button>
+                    </div>
+                </form>
+                <div class="social-login">
+                    <ul class="socials">
+                        <li><span class="social-label">Or login with</span></li>                   
+                        <li><a style="color: #dd4b39" href="/auth/google" role="button"><i class="fab fa-google fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</form>
+</body>
+</html>

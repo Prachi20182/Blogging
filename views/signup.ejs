@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blogging</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/account.css">
+    </head>
+    <body>
+        <a href="/" class="home">Home</a>
+        <form action="/signup" method="POST">
+            <section class="signup">
+                <div class="container">
+                    <div class="signup-content">
+                        <div class="signup-form">
+                            <h2 class="form-title">Sign up</h2>
+                            <form class="register-form" id="register-form">
+                                <div class="form-group">
+                                    <label for="email"></label>
+                                    <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pass"></label>
+                                    <input type="password" name="pass" id="pass" placeholder="Password"/>
+                                </div>
+                                <div class="form-group form-button">
+                                    <button type="submit" name="signup" id="signup" class="btn" value="Register">Register</button>
+                                </div>
+                            </form>
+                            <div class="social-login">
+                                <ul class="socials">
+                                    <li><span class="social-label">Or signup with</span></li>
+                                    <li><a style="color: #dd4b39" href="/auth/google" role="button"><i class="fab fa-google fa-lg"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="signup-image">
+                            <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                            <a href="/signin" class="signin-link">I am already member</a>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </form>
+    </body>
+</html>
